@@ -1,7 +1,7 @@
 "use strict";
 Object.defineProperty(exports, "__esModule", { value: true });
 var core_1 = require("@angular/core");
-var core_2 = require("@agm/core");
+var core_2 = require("@agm/core/core.umd");
 var AgmOverlay = (function () {
     function AgmOverlay(_mapsWrapper, _markerManager) {
         this._mapsWrapper = _mapsWrapper;
