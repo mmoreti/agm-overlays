@@ -1,5 +1,5 @@
 import { EventEmitter, ElementRef, QueryList } from "@angular/core";
-import { AgmInfoWindow, MarkerManager, GoogleMapsAPIWrapper } from "@agm/core";
+import { AgmInfoWindow, MarkerManager, GoogleMapsAPIWrapper } from "@agm/core/core.umd";
 export declare class AgmOverlay {
     protected _mapsWrapper: GoogleMapsAPIWrapper;
     private _markerManager;

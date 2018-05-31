@@ -155,7 +155,7 @@ var __metadata = (this && this.__metadata) || function (k, v) {
 };
 Object.defineProperty(exports, "__esModule", { value: true });
 var core_1 = __webpack_require__("./node_modules/@angular/core/esm5/core.js");
-var core_2 = __webpack_require__("./node_modules/@agm/core/index.js");
+var core_umd_1 = __webpack_require__("./node_modules/@agm/core/core.umd.js");
 var AgmOverlay = (function () {
     function AgmOverlay(_mapsWrapper, _markerManager //rename to fight the private declaration of parent
     ) {
@@ -321,7 +321,7 @@ var AgmOverlay = (function () {
         __metadata("design:type", Boolean)
     ], AgmOverlay.prototype, "openInfoWindow", void 0);
     __decorate([
-        core_1.ContentChildren(core_2.AgmInfoWindow),
+        core_1.ContentChildren(core_umd_1.AgmInfoWindow),
         __metadata("design:type", core_1.QueryList)
     ], AgmOverlay.prototype, "infoWindow", void 0);
     __decorate([
@@ -337,11 +337,12 @@ var AgmOverlay = (function () {
             selector: "agm-overlay",
             template: '<div #content><div style="position:absolute"><ng-content></ng-content></div></div>'
         }),
-        __metadata("design:paramtypes", [core_2.GoogleMapsAPIWrapper,
-            core_2.MarkerManager //rename to fight the private declaration of parent
-        ])
+        __metadata("design:paramtypes", [typeof (_a = typeof core_umd_1.GoogleMapsAPIWrapper !== "undefined" && core_umd_1.GoogleMapsAPIWrapper) === "function" && _a || Object, typeof (_b = typeof core_umd_1.MarkerManager //rename to fight the private declaration of parent
+             !== "undefined" && core_umd_1.MarkerManager //rename to fight the private declaration of parent
+            ) === "function" && _b || Object])
     ], AgmOverlay);
     return AgmOverlay;
+    var _a, _b;
 }());
 exports.AgmOverlay = AgmOverlay;
 

@@ -9,7 +9,7 @@ import {
 import {
   AgmInfoWindow, LatLngBounds, LatLng, MarkerManager,
   GoogleMapsAPIWrapper, AgmMarker
-} from "@agm/core"
+} from "@agm/core/core.umd"
 
 import { GoogleMap } from "@agm/core/services/google-maps-types"
 declare var google: any
